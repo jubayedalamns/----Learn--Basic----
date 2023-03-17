@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//create normal route
+Route::get('/helloWorld',function(){
+    return 'hello world';
+});
+
+// create route with pass parameter
+// Route::get('/user/{id}/{name}',function($userId,$userName){
+//     return 'your user id is '.$userId . "your user name is ".$userName;
+// });  // Show Error if i dont give id or name value
+
+
+//create route with pass parameter
+Route::get('/user/{id?}/{name?}',function($userId = 1,$userName='Jannatul Mawa'){
+    return 'your user id is '.$userId . "your user name is ".$userName;
+});
