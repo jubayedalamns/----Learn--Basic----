@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 //create normal route
 Route::get('/helloWorld',function(){
-    return 'hello world';
+    return view('basic/view');
 });
 
 // create route with pass parameter
@@ -29,6 +29,9 @@ Route::get('/helloWorld',function(){
 
 
 //create route with pass parameter
-Route::get('/user/{id?}/{name?}',function($userId = 1,$userName='Jannatul Mawa'){
-    return 'your user id is '.$userId . "your user name is ".$userName;
+Route::get('/user/{id?}/{name?}',function($userId = "1",$userName="Jannatul Mawa"){
+    return view('basic/viewWithValue',[
+        'id' => $userId,
+        'name' => $userName,
+    ]);
 });
