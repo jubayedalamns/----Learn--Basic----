@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GrettingController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\RcController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,3 +42,7 @@ Route::get('/user/{id?}/{name?}',function($userId = "1",$userName="Jannatul Mawa
 // Create Route For Controller Value Show
 Route::get('/post',[PostController::class,'love']);
 Route::get('gretting/{title?}',[GrettingController::class,'gretting']);
+
+// Resource Controller 
+// Route::resource('all-resource','RcController');
+Route::resource('all-resource', RcController::class);
