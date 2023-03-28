@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>this is gretting file {{ $grettingTitle }}</h2>
+    <h1>This Is About Page</h1>
+    <a href="{{ '/' }}">Return To Home</a>
 </body>
 </html>

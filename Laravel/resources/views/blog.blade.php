@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> User Id Is : {{ $id }} </h1>
-    <h1> User Name Is : {{ $name }} </h1>
+    <h1>This Is Blog Page</h1>
+    <a href="{{ '/' }}">Return To Home</a>
 </body>
 </html>
