@@ -26,10 +26,6 @@
                     <h1>This Is Home Page</h1>
                     <ul>
                         <li> <a href="{{ '/' }}">Home</a></li>
-                        <li> <a href="{{ url('about') }}">About</a></li>
-                        <li> <a href="{{ URL::to('blog') }}">Blog</a></li>
-                        <li> <a href="{{ Route('name-route') }}">Name Route </a></li>
-                        <li> <a href="{{ Route('url.encript') }}">Route Encript </a></li>
                     </ul>
                 </div>
             </div>

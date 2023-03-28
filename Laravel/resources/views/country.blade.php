@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>This Is Name Route Page</h1>
-    <a href="{{ '/' }}">Return To Home</a>
+    {{-- http://localhost:8000/country?country=Bangladesh --}}
+    <h1> This Is My Country Middleware </h1>
 </body>
 </html>
