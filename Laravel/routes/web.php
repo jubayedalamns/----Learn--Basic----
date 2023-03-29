@@ -4,6 +4,7 @@ use App\Http\Controllers\GrettingController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RcController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,8 +21,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-//php artisan make:middleware CountryMiddleware
-Route::get('/country', function(){
-    return view('country');
-})->middleware('myCountry');
+// Route::post(md5('/user/store') , [UserController::class, 'store'])->name('user.store');
+Route::post('/user/store' , [UserController::class, 'store'])->name('user.store');
